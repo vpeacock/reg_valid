@@ -27,11 +27,11 @@
                         <span class="form__error">e-mail в формате: students-yandex@yandex.ru</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="text" name="tel" placeholder="Телефон" pattern="^(?:\+7|8)[\(\-\d\)\s]{9,15}\d$" minlength="" maxlength="18"  required/>
+                        <input class="form__input" type="text" name="tel" placeholder="Телефон" pattern="^(?:\+7|8)\s?(?:\(\d{3}\)|\d{3})(\s?\-?)\d{3}\s?\-?\d{2}\s?\-?\d{2}$" minlength="" maxlength="18"  required/>
                         <span class="form__error">Недопустимый формат номера</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="text" name="url" pattern="^https?:\/\/(?:www\.){0,1}(?:[\w\-\.]{1,}\.[a-z]{2,5}|[\d\.]{7,15})(?::[1-9]\d{1,4})?(?:\/[\w\-\$%\.]{1,})*(?:#|\/|\?|)" placeholder="Ваш сайт" required/>
+                        <input class="form__input" type="text" name="url" pattern="^https?:\/\/(?:[\w\-\.]{1,}\.[a-z]{2,5}|[\d\.]{7,15})(?::[1-9]\d{1,4})?(?:\/[\w\-\$%\.]{1,})*(?:#|\/|\?|)$" placeholder="Ваш сайт" required/>
                         <span class="form__error">URL в формате: http://mysite.ru</span>
                     </div>
                     <button class="form__button" type="text">Отправить</button>
